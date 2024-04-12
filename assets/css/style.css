@@ -198,6 +198,14 @@ main {
     padding: 5%;
     color: #3a3a3a;
 }
+/* Media queries for large or landscape mobile phones */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+    
+}
 
 /* Media query for tablets & up (> 768px) */
 @media screen and (min-width: 768px) {
@@ -256,7 +264,9 @@ main {
         text-align: end;
         align-self: flex-end;
     }
-
+    #photos {
+        column-count: 3;
+    }
 }
 
 /* Add hover effect for laptops & up */
@@ -264,6 +274,10 @@ main {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+    #photos {
+        column-count: 4;
+    }
+
 }
 
 /* Widescreens */
