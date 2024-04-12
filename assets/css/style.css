@@ -88,6 +88,8 @@ main {
     /* make main element take up surplus space to push footer to bottom */
     flex: 1 0 auto;
     margin-top: 47px;
+    display: flex;
+    flex-direction: column;
 }
 
 #hero {
@@ -174,7 +176,6 @@ main {
     color: #fafafa;
 }
 
-
 /* Gallery images */
 #photos img {
     width: 100%;
@@ -182,6 +183,50 @@ main {
 }
 #photos {
     line-height: 0;
+}
+
+/* Sign up form */
+#signup {
+    background: url(../images/signup-image.webp) no-repeat;
+    background-size: cover;
+    background-position: 75%;
+    flex-grow: 1;
+    padding: 20px 10%;
+}
+
+#signup-form {
+    color: #fff;
+    background-color: rgba(60, 60, 60, .6);
+    padding: 30px;
+}
+#signup-form > h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    height: 25px;
+    width: 100%;
+    padding: 0 5px;
+    margin: 5px 0 20px;
+    background-color: transparent;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.join-button {
+    border-radius: 2px;
+    background-color: #454b1b;
+    color: #fafafa;
+    font-size: 100%;
+    margin-top: 20px;
+    padding: 15px 32px;
 }
 
 /* Footer */
@@ -198,6 +243,7 @@ main {
     padding: 5%;
     color: #3a3a3a;
 }
+
 /* Media queries for large or landscape mobile phones */
 @media screen and (min-width: 576px) {
     #photos {
