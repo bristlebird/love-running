@@ -212,6 +212,7 @@ main {
     background-color: transparent;
     border: 1px solid #fafafa;
     border-radius: 2px;
+    color: #fff;
 }
 
 .radio-buttons {
