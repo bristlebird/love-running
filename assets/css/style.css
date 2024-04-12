@@ -80,10 +80,16 @@ nav {
 
 /* Main content */
 main {
-    background-color: lightblue;
     /* make main element take up surplus space to push footer to bottom */
     flex: 1 0 auto;
     margin-top: 47px;
+}
+
+#hero {
+    height: 600px;
+    width: 100%;
+    color: lightgreen;
+    background: url(../images/hero-image.webp) no-repeat center center/cover;
 }
 
 /* Footer */
@@ -141,5 +147,4 @@ main {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
-    
 }
